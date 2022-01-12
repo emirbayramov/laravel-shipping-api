@@ -106,7 +106,7 @@ class ShippingApiController extends Controller
         return response()->json([
             'distance' => $distance,
             'weight' => $weight,
-            'price' =>  $distance*$weight*$this->shippingCharge
+            'price' =>  $distance/1000*$weight*$this->shippingCharge
         ]);
 
 
